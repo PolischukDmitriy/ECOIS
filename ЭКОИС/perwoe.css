@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+#table {
+    display: block;
+    padding-left: 5%;
+    padding-right: 20%;
+    margin-top: 2%;
+}
+
+header {
+    background-color: #4cae4c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4cae4c;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+}
+
+.exit{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4cae4c;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 5%;
+}
+
+#sokr{
+    display: block;
+    padding-left: 5%;
+    padding-right: 20%;
+    margin-top: 2%;
+    font-size: 115%;
+}
+
+/* ------------------------- сайдбар ----------------------------------------------------------- */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #fff;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn:hover {
+    background-color: #518b51;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/* ------------------------- футер ----------------------------------------------------------- */
+footer {
+    background-color: #4cae4c;
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ------------------------- тиблица ----------------------------------------------------------- */
+
+#myTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#myTable th, #myTable td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+#myTable th {
+    background-color: #f2f2f2;
+}
+
+#myTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
